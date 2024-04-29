@@ -9,7 +9,7 @@ This repository contains code to perform ETL (Extract, Transform, and Load) func
 ![PostgreSQL Schema](Crowdfunding_ERD.png)
 
 * Ensure the crowdfunding.xlsx and contacts.xlsx tables exist and contain current data
-* Opena and execute the "ETL_Mini_Project_Starter_Code" notebook.
+* Open and execute the "ETL_Mini_Project_Starter_Code" notebook.
 * This will create the four CSV files required: campaigns, category, subcategory, and contacts
 * Using PGAdmin, create a database named "crowdfunding_db"
 * Run the "crowdfunding_db_schema.sql" file to create the required tables with the appropriate schemas
