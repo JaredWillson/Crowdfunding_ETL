@@ -4,6 +4,8 @@
 ### Summary
 This repository contains code to perform ETL (Extract, Transform, and Load) functions against data contained in a "crowdfunding.xlsx" spreadsheet and a "contacts.xlsx" spreadsheet. The spreadsheets are first loaded into Pandas, datatypes examined for accuracy, split into multiple dataframes that will allow for a fully normalized structure within a PostgreSQL database, and any concatenated fields are split into required values. The data for the four normalized tables are saved into four CSV files for import into a database. They are: campaign.csv, category.csv, subcategory.csv, and contacts.csv all within the Resources subdirectory. The campaign.csv file contains information on each individual campaign. The contacts.csv file contains name and email information on the owner of each campaign. The category.csv and subcategory.csv files contain respectively information on each valid category and subcategory that might be used in the campaigns. Using QuickDataabaseDiagrams, a file called crowdfunding_db_schema.sql was created in order to generate an appropriate schema within PostgreSQL. It is stored in the Resources folder. Finally, all four tables are loaded into the PostgreSQL database using PGAdmin. The SQL used to validate that all tables were successfully populated is contained in a file called "confirmations.sql"
 
+In addition to the above files, there are also four screenshots of the PostgreSQL tables contained in the Resources folder. They are: campaign_table_screenshot.png, category_table_screenshot.png, contacts_table_screenshot.png, and subcategory_table_screenshot.png.
+
 ### Instructions for use. 
 
 ![PostgreSQL Schema](Crowdfunding_ERD.png)
